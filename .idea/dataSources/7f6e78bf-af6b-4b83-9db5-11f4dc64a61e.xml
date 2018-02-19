@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bbs@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="bbs">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bookborrow"/>
+    <schema id="4" parent="1" name="csharp"/>
+    <schema id="5" parent="1" name="db"/>
+    <schema id="6" parent="1" name="helloworld"/>
+    <schema id="7" parent="1" name="hibernate"/>
+    <schema id="8" parent="1" name="infocomshop"/>
+    <schema id="9" parent="1" name="information"/>
+    <schema id="10" parent="1" name="information_schema"/>
+    <schema id="11" parent="1" name="jdbc"/>
+    <schema id="12" parent="1" name="mybook"/>
+    <schema id="13" parent="1" name="mydb"/>
+    <schema id="14" parent="1" name="mysql"/>
+    <schema id="15" parent="1" name="performance_schema"/>
+    <schema id="16" parent="1" name="spring"/>
+    <schema id="17" parent="1" name="test"/>
+    <table id="18" parent="2" name="article"/>
+    <column id="19" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="18" name="pid">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="21" parent="18" name="rootid">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="22" parent="18" name="title">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="18" name="cont">
+      <Position>5</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <column id="24" parent="18" name="pdate">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="25" parent="18" name="isleaf">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="26" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
